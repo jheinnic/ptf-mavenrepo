@@ -1,0 +1,12 @@
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/HttpExceptionHandler.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/DuplicateResourceException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/NotFoundException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/filter/ApiCorsFilter.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/UnauthorizedException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/EmbeddedWebApiConfiguration.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/ApiException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/ConflictException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/BadRequestException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/WebConfiguration.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/util/ForbiddenException.java
+/Users/jheinnic/Git/JchPtf/mavenrepo/commons/web/src/main/java/name/jchein/portfolio/common/web/MakeGooglePermutations.java

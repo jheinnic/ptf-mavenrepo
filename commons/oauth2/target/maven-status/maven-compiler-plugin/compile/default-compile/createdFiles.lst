@@ -1,0 +1,5 @@
+name/jchein/demo/bstocksolutions/oauth2/legacy/AuthCORSFilter.class
+name/jchein/demo/bstocksolutions/oauth2/legacy/ResourceServerWebConfig.class
+name/jchein/demo/bstocksolutions/oauth2/remote/RemoteTokenServiceConfig.class
+name/jchein/demo/bstocksolutions/oauth2/legacy/AuthServerWebConfig.class
+name/jchein/demo/bstocksolutions/oauth2/legacy/ResourceCORSFilter.class

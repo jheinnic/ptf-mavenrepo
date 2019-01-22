@@ -1,0 +1,54 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties",
+      "name": "websocket.threads",
+      "type": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties",
+      "name": "websocket.threads.inbound",
+      "sourceMethod": "public name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties.ThreadPoolConfigProperties getInbound() ",
+      "type": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties",
+      "name": "websocket.threads.outbound",
+      "sourceMethod": "public name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties.ThreadPoolConfigProperties getOutbound() ",
+      "type": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.inbound.core-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.inbound.max-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.inbound.queue-capacity",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.outbound.core-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.outbound.max-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.demo.bstocksolutions.common.websocket.WebSocketConfigProperties$ThreadPoolConfigProperties",
+      "name": "websocket.threads.outbound.queue-capacity",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

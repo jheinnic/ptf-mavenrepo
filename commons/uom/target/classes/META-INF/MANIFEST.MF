@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Demo Project Units of Measure
+Implementation-Version: 0.0.1-bootstrap-SNAPSHOT
+Built-By: jheinnic
+Implementation-Vendor-Id: name.jchein.demo.zumepizza.microservices
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://zumepizza.jchein.ngrok.io/proto/apps/resolu
+ tion.registry/parent/common-uom/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: John Heinnickel Software
+

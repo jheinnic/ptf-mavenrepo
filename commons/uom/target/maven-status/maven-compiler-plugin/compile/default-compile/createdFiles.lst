@@ -1,0 +1,11 @@
+name/jchein/portfolio/common/uom/configuration/GeoConfiguration.class
+name/jchein/portfolio/common/uom/format/CitrineUnitFormat$Flavor.class
+name/jchein/portfolio/common/uom/units/MMM.class
+name/jchein/portfolio/common/uom/units/NamesAndSymbols.class
+name/jchein/portfolio/common/uom/format/CitrineUnitFormatService.class
+name/jchein/portfolio/common/uom/configuration/UnitsConfiguration.class
+name/jchein/portfolio/common/uom/units/CitrineSystemOfUnitsService.class
+name/jchein/portfolio/common/uom/format/CitrineUnitFormat.class
+name/jchein/portfolio/common/uom/quantity/MonetaryAmount.class
+name/jchein/portfolio/common/uom/format/CitrineUnitFormat$CitrineDefaultFormat.class
+name/jchein/portfolio/common/uom/units/CitrineUnits.class

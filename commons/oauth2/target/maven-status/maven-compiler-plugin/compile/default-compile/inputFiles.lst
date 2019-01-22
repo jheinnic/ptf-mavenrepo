@@ -1,0 +1,5 @@
+/Users/jheinnic/Git/zumeProto/common/oauth2/src/main/java/name/jchein/demo/bstocksolutions/oauth2/legacy/ResourceServerWebConfig.java
+/Users/jheinnic/Git/zumeProto/common/oauth2/src/main/java/name/jchein/demo/bstocksolutions/oauth2/legacy/AuthServerWebConfig.java
+/Users/jheinnic/Git/zumeProto/common/oauth2/src/main/java/name/jchein/demo/bstocksolutions/oauth2/remote/RemoteTokenServiceConfig.java
+/Users/jheinnic/Git/zumeProto/common/oauth2/src/main/java/name/jchein/demo/bstocksolutions/oauth2/legacy/ResourceCORSFilter.java
+/Users/jheinnic/Git/zumeProto/common/oauth2/src/main/java/name/jchein/demo/bstocksolutions/oauth2/legacy/AuthCORSFilter.java

@@ -1,0 +1,42 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen",
+      "type": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.clock-seq",
+      "type": "name.jchein.common.identity.BitSource"
+    },
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.clock-seq-file",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.clock-seq-value",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.node",
+      "type": "name.jchein.common.identity.BitSource"
+    },
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.node-file",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "name.jchein.common.identity.UUIDGeneratorConfigurationProperties",
+      "name": "jchptf.uuidgen.node-value",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
