@@ -1,9 +1,0 @@
-compiler.compileProtoFiles=true
-compiler.cppOutputDirectory=target/generated-sources/protobuf/c++
-compiler.descriptorFilePath=/usr/local/Cellar/protobuf/3.5.1_1/include/google/protobuf/descriptor.proto
-compiler.javaOutputDirectory=target/generated-sources/protobuf/java
-compiler.protocFilePath=/usr/local/Cellar/protobuf/3.5.1_1/bin/protoc
-compiler.pythonOutputDirectory=target/generated-sources/protobuf/python
-eclipse.preferences.version=1
-general.validateFilesOnActivation=false
-paths.directoryPaths=${workspace_loc\:/${project}/target/protoc-dependencies/2d33eef45384aa824634afe9bdb1ff98},${workspace_loc\:/${project}/target/protoc-dependencies/3361f28cfbcfd776f60a5a07002996ad},${workspace_loc\:/${project}/target/protoc-dependencies/a1a9ff20b5ead1078a374ef7b95fe19f}
