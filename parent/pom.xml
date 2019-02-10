@@ -7,18 +7,19 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<relativePath></relativePath>
 		<version>2.0.3.RELEASE</version>
+		<relativePath></relativePath>
 	</parent>
 
 	<groupId>name.jchein.portfolio.maven</groupId>
 	<artifactId>starter-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
+	<name>starter-parent</name>
 	<description>Portfolio Starter Parent POM File
 
 Establishes common dependency versions, plugin configurations, and modular profile add-ons keyed by the presence of .mavenbuild-* marker files and directories.</description>
-	<packaging>pom</packaging>
 
 	<properties>
 		<!-- You'll find mavenbuild.service-name defined in parent pom files one 
@@ -29,7 +30,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 
 		<generated-sources-path>${project.build.directory}/generated-sources</generated-sources-path>
 		<generated-sources-java-path>java</generated-sources-java-path>
-		<!-- <generated-resources-java-path>src/main/resources</generated-resources-java-path> -->
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<useReleaseProfile>false</useReleaseProfile>
@@ -47,7 +47,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<frontend.plugin-version>1.3</frontend.plugin-version>
 		<dockerfile.plugin-version>1.3.5</dockerfile.plugin-version>
 		<gauge.plugin-version>1.2.1</gauge.plugin-version>
-		<!--lombok.plugin-version>1.16.20.0</lombok.plugin-version-->
+		<lombok.plugin-version>1.18.4.0</lombok.plugin-version>
 		<m2e-lifecycle.plugin-version>1.0.0</m2e-lifecycle.plugin-version>
 		<maven-assembly.plugin-version>3.1.0</maven-assembly.plugin-version>
 		<maven-clean.plugin-version>2.5</maven-clean.plugin-version>
@@ -59,11 +59,12 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<maven-surefire.plugin-version>2.20.1</maven-surefire.plugin-version>
 		<protobuf-maven.plugin-version>0.5.1</protobuf-maven.plugin-version>
 		<properties.plugin-version>1.0.0</properties.plugin-version>
-		<sql.plugin-version>3.0.0-SNAPSHOT</sql.plugin-version>
+		<!--sql.plugin-version>3.0.0-SNAPSHOT</sql.plugin-version-->
+		<sql.plugin-version>1.5</sql.plugin-version>
 		<swagger-codegen.plugin-version>2.2.3</swagger-codegen.plugin-version>
 		<viatra.plugin-version>1.6.2</viatra.plugin-version>
-		<xtend.plugin-version>2.13.0</xtend.plugin-version>
-		<xtext.plugin-version>2.13.0</xtext.plugin-version>
+		<xtend.plugin-version>2.16.0</xtend.plugin-version>
+		<xtext.plugin-version>2.16.0</xtext.plugin-version>
 
 
 		<!-- Secondary dependencies specific to frontend-maven-plugin -->
@@ -94,7 +95,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<hazelcast.version>3.11.1</hazelcast.version>
 		<!--hibernate-validator.version>6.0.10.Final</hibernate-validator.version-->
 		<io-grpc.version>1.18.0</io-grpc.version>
-		<jackson.version>2.9.8</jackson.version>
+		<!--jackson.version>2.9.8</jackson.version-->
 		<!--javax-cdi.version>1.2</javax-cdi.version-->
 		<!--javax-el.version>2.2.5</javax-el.version--> 
 		<!--javax-servlet.version>3.1.0</javax-servlet.version-->
@@ -108,8 +109,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<jts-jackson.version>2.4</jts-jackson.version>
 		<junit.version>4.12</junit.version>
 		<jwt.version>0.8.0-SNAPSHOT</jwt.version>
-		<keycloak.version>4.5.0.Final</keycloak.version>
-		<!--lombok.version>1.16.20</lombok.version-->
+		<keycloak.version>4.8.3.Final</keycloak.version>
+		<lombok.version>1.18.4</lombok.version>
 		<!--jersey-client.version>2.25.1</jersey-client.version-->
 		<!--joda-time.version>2.9.9</joda-time.version-->
 		<!--logback.version>1.2.3</logback.version-->
@@ -128,18 +129,21 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<scala-lib.version>2.12.2</scala-lib.version>
 		<!--slf4j.version>1.7.25</slf4j.version-->
 		<springfox-version>2.4.0</springfox-version>
-		<spring.version>5.1.4.RELEASE</spring.version>
-		<spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+		<spring-boot.version>2.1.2.RELEASE</spring-boot.version>
+		<spring-boot-admin.version>2.1.1</spring-boot-admin.version>
 		<spring-boot-grpc.version>2.2.0.RELEASE</spring-boot-grpc.version>
+		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+		<spring-statemachine.version>2.0.1.RELEASE</spring-statemachine.version>
 		<!--
+		<spring.version>5.1.4.RELEASE</spring.version>
 		<spring-cloud-aws.version>1.2.4.RELEASE</spring-cloud-aws.version>
 		<spring-cloud-consul.version>2.0.1.RELEASE</spring-cloud-consul.version>
 		<spring-cloud-zookeeper.version>1.1.2.RELEASE</spring-cloud-zookeeper.version>
-		-->
-		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
+		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 		<spring-integration.version>5.1.2.RELEASE</spring-integration.version>
 		<spring-security.version>5.1.3.RELEASE</spring-security.version>
 		<spring-oauth2-client.version>2.3.4.RELEASE</spring-oauth2-client.version>
+		-->
 		<statefulj.version>3.0</statefulj.version>
 		<systems-uom.version>0.7.2</systems-uom.version>
 		<swagger.version>1.5.15</swagger.version>
@@ -151,8 +155,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<core-resources.version>3.12.0</core-resources.version>
 		<eclipse-text.version>3.6.100</eclipse-text.version>
 		<emf.version>2.12.0</emf.version>
-		<emf-codegen.version>2.11.0</emf-codegen.version>
-		<xtext.version>2.13.0</xtext.version>
+		<xtext.version>2.16.0</xtext.version>
 		<ecore-xtext.version>1.2.0</ecore-xtext.version>
 		<ecore-xcore.version>1.3.1</ecore-xcore.version>
 		<ecore-xcore-lib.version>1.1.100</ecore-xcore-lib.version>
@@ -245,7 +248,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<plugin>
 					<groupId>org.projectlombok</groupId>
 					<artifactId>lombok-maven-plugin</artifactId>
-					<!--version>${lombok.plugin-version}</version-->
+					<version>${lombok.plugin-version}</version>
 					<executions>
 						<execution>
 							<phase>generate-sources</phase>
@@ -279,99 +282,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
 					<version>${maven-exec.plugin-version}</version>
-					<executions>
-						<execution>
-							<id>mwe2Launcher</id>
-							<phase>generate-sources</phase>
-							<goals>
-								<goal>java</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<mainclass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainclass>
-						<arguments>
-							<argument>${project.basedir}/workflow/generateGenModel.mwe2</argument>
-							<argument>-p</argument>
-							<argument>rootPath=${project.basedir}/..</argument>
-						</arguments>
-						<classpathscope>compile</classpathscope>
-						<includeplugindependencies>true</includeplugindependencies>
-						<cleanupdaemonthreads>false</cleanupdaemonthreads>
-						<!-- see https://bugs.eclipse.org/bugs/show_bug.cgi?id=475098#c3 -->
-					</configuration>
-					<dependencies>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.mwe2.launch</artifactId>
-							<version>${emf-mwe2-launch.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.platform</groupId>
-							<artifactId>org.eclipse.text</artifactId>
-							<version>${eclipse-text.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.platform</groupId>
-							<artifactId>org.eclipse.core.resources</artifactId>
-							<version>${core-resources.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.common</artifactId>
-							<version>${emf.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.ecore</artifactId>
-							<version>${emf.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-							<version>${emf.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.codegen.ecore</artifactId>
-							<version>${emf.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.codegen</artifactId>
-							<version>${emf-codegen.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.ecore.xcore</artifactId>
-							<version>${ecore-xcore.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.ecore.xcore.lib</artifactId>
-							<version>${ecore-xcore-lib.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.emf</groupId>
-							<artifactId>org.eclipse.emf.codegen.ecore.xtext</artifactId>
-							<version>${ecore-xtext.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.xtext</groupId>
-							<artifactId>org.eclipse.xtext.ecore</artifactId>
-							<version>${xtext.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.xtext</groupId>
-							<artifactId>org.eclipse.xtext.xbase</artifactId>
-							<version>${xtext.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.eclipse.xtend</groupId>
-							<artifactId>org.eclipse.xtend.core</artifactId>
-							<version>${xtext.version}</version>
-						</dependency>
-					</dependencies>
 				</plugin>
 
 				<!-- Generates the Xtend and Xcore models -->
@@ -558,15 +468,19 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>com.spotify</groupId>
 					<artifactId>dockerfile-maven-plugin</artifactId>
 					<version>${dockerfile.plugin-version}</version>
-					<!--
 					<executions>
 						<execution>
+						<id>default</id>
 							<goals>
-								<goal>repackage</goal>
+								<goal>build</goal>
+								<goal>push</goal>
 							</goals>
+							<configuration>
+								<repository>jheinnic/${mavenbuild.service-name}</repository>
+								<tag>${project.version}</tag>
+							</configuration>
 						</execution>
 					</executions>
-					-->
 				</plugin>
 
 				<plugin>
@@ -593,7 +507,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 									<pluginExecutionFilter>
 										<groupId>org.codehaus.mojo</groupId>
 										<artifactId>sql-maven-plugin</artifactId>
-										<versionRange>[3.0.0-SNAPSHOT,)</versionRange>
+										<!--versionRange>[3.0.0-SNAPSHOT,)</versionRange-->
+										<versionRange>[1.5,3.0.0-SNAPSHOT]</versionRange>
 										<goals>
 											<goal>execute</goal>
 										</goals>
@@ -727,13 +642,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 
 			<!-- Spring -->
 			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring-boot.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		 	<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>${spring-cloud.version}</version>
@@ -741,12 +649,28 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<scope>import</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.statemachine</groupId>
+				<artifactId>spring-statemachine-bom</artifactId>
+				<version>${spring-statemachine.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+				<version>${spring-boot-admin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			
+			<!-- Jackson is determined by spring-boot BOM -->
+			<!--dependency>
 				<groupId>com.fasterxml.jackson</groupId>
 				<artifactId>jackson-bom</artifactId>
 				<version>${jackson.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
-			</dependency>
+			</dependency-->
 
 			<!-- Keycloak -->
 			<dependency>
@@ -755,6 +679,11 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<version>${keycloak.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-spring-boot-starter</artifactId>
+				<!--version>${keycloak.version}</version-->
 			</dependency>
 
 			<!-- Jackson GIS Extensions -->
@@ -787,7 +716,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>drools-decisiontables</artifactId>
 				<version>${optaplanner.version}</version>
 			</dependency>
-
 
 			<!-- Openroutes 4.4.0 API -->
 			<dependency>
@@ -841,22 +769,21 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<groupId>org.apache.tomcat.embed</groupId> <artifactId>tomcat-embed-websocket</artifactId> 
 				<version>${tomcat-embedded.version}</version> </dependency> -->
 
-			<dependency>
+
+			<!--dependency>
 				<groupId>org.springframework.security.oauth</groupId>
 				<artifactId>spring-security-oauth2</artifactId>
 				<version>${spring-oauth2.version}</version>
-			</dependency>
+			</dependency-->
 
-			<!-- Spring Cloud -->
+			<!-- Spring Cloud 
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-context</artifactId>
-				<!--version>${spring-cloud-aws.version}</version-->
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-				<!--version>${spring-cloud-zookeeper.version}</version-->
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -949,14 +876,13 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>spring-boot-configuration-processor</artifactId>
 				<optional>true</optional>
 			</dependency>
+			-->
 
 			<!-- Spring GRPC -->
 			<dependency>
 				<groupId>net.devh</groupId>
 				<artifactId>grpc-spring-boot-starter</artifactId>
 				<version>${spring-boot-grpc.version}</version>
-				<!--scope>import</scope>
-				<type>pom</type-->
 				<exclusions>
 					<exclusion>
 						<groupId>io.grpc</groupId>
@@ -968,8 +894,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<groupId>net.devh</groupId>
 				<artifactId>grpc-client-spring-boot-starter</artifactId>
 				<version>${spring-boot-grpc.version}</version>
-				<!--scope>import</scope>
-				<type>pom</type-->
 				<exclusions>
 					<exclusion>
 						<groupId>io.grpc</groupId>
@@ -981,8 +905,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<groupId>net.devh</groupId>
 				<artifactId>grpc-server-spring-boot-starter</artifactId>
 				<version>${spring-boot-grpc.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
 				<exclusions>
 					<exclusion>
 						<groupId>io.grpc</groupId>
@@ -1076,18 +998,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<version>${mit-openid-client.version}</version>
 			</dependency>
 
-			<!-- Xtend -->
-			<dependency>
-				<groupId>org.eclipse.xtend</groupId>
-				<artifactId>org.eclipse.xtend.lib</artifactId>
-				<version>${xtext.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.oehme.xtend</groupId>
-				<artifactId>xtend-contrib</artifactId>
-				<version>${xtend-contrib.version}</version>
-			</dependency>
-
 			<!-- ECore -->
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
@@ -1112,8 +1022,10 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
 				<artifactId>org.eclipse.emf.codegen</artifactId>
-				<version>${emf-codegen.version}</version>
+				<version>${emf.version}</version>
 			</dependency>
+
+			<!-- Eclipse EMF XCore and XText -->
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
 				<artifactId>org.eclipse.emf.codegen.ecore.xtext</artifactId>
@@ -1124,17 +1036,59 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>org.eclipse.emf.ecore.xcore</artifactId>
 				<version>${ecore-xcore.version}</version>
 			</dependency>
-
-			<!-- Eclipse EMF XCore and XText -->
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
 				<artifactId>org.eclipse.emf.ecore.xcore.lib</artifactId>
 				<version>${ecore-xcore-lib.version}</version>
 			</dependency>
+
+			<!-- Eclipse XTend -->
+			<dependency>
+				<groupId>org.eclipse.xtend</groupId>
+				<artifactId>org.eclipse.xtend.lib</artifactId>
+				<version>${xtext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.oehme.xtend</groupId>
+				<artifactId>xtend-contrib</artifactId>
+				<version>${xtend-contrib.version}</version>
+			</dependency>
+			
+			<!-- Eclipse XText -->
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.ecore</artifactId>
+				<version>${xtext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.xbase</artifactId>
+				<version>${xtext.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.eclipse.xtext</groupId>
 				<artifactId>org.eclipse.xtext.xbase.lib</artifactId>
 				<version>${xtext.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.xbase.ide</artifactId>
+				<version>${xtext-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.builder.standalone</artifactId>
+				<version>${xtext-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.generator</artifactId>
+				<version>${xtext-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>org.eclipse.xtext.ide</artifactId>
+				<version>${xtext-version}</version>
 			</dependency>
 
 			<!-- ATL -->
@@ -1797,7 +1751,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 							<dependency>
 								<groupId>org.eclipse.emf</groupId>
 								<artifactId>org.eclipse.emf.codegen</artifactId>
-								<version>${emf-codegen.version}</version>
+								<version>${emf.version}</version>
 							</dependency>
 							<dependency>
 								<groupId>org.eclipse.emf</groupId>
@@ -1897,6 +1851,116 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</dependencies>
 		</profile>
 
+		<profile>
+			<id>xtext</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-xtext</exists>
+				</file>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-exe-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>mwe2Launcher</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>java</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<mainclass>org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher</mainclass>
+							<arguments>
+								<argument>${project.basedir}/workflow/generateGenModel.mwe2</argument>
+								<argument>-p</argument>
+								<argument>rootPath=${project.basedir}/..</argument>
+							</arguments>
+							<classpathscope>compile</classpathscope>
+							<includeplugindependencies>true</includeplugindependencies>
+							<cleanupdaemonthreads>false</cleanupdaemonthreads>
+							<!-- see https://bugs.eclipse.org/bugs/show_bug.cgi?id=475098#c3 -->
+						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.mwe2.launch</artifactId>
+								<version>${emf-mwe2-launch.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.platform</groupId>
+								<artifactId>org.eclipse.text</artifactId>
+								<version>${eclipse-text.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.platform</groupId>
+								<artifactId>org.eclipse.core.resources</artifactId>
+								<version>${core-resources.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.common</artifactId>
+								<version>${emf.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.ecore</artifactId>
+								<version>${emf.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
+								<version>${emf.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.codegen.ecore</artifactId>
+								<version>${emf.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.codegen</artifactId>
+								<version>${emf.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.ecore.xcore</artifactId>
+								<version>${ecore-xcore.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.ecore.xcore.lib</artifactId>
+								<version>${ecore-xcore-lib.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.emf</groupId>
+								<artifactId>org.eclipse.emf.codegen.ecore.xtext</artifactId>
+								<version>${ecore-xtext.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.xtext</groupId>
+								<artifactId>org.eclipse.xtext.ecore</artifactId>
+								<version>${xtext.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.xtext</groupId>
+								<artifactId>org.eclipse.xtext.xbase</artifactId>
+								<version>${xtext.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.eclipse.xtend</groupId>
+								<artifactId>org.eclipse.xtend.core</artifactId>
+								<version>${xtext.version}</version>
+							</dependency>
+						</dependencies>					
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 		<profile>
 			<id>viatra</id>
 			<activation>
@@ -2486,12 +2550,13 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</activation>
 			<build>
 				<plugins>
-					<plugin>
+					<!-- For now, proto projects get their protobuf definitions transformed to code
+					     outside of Maven, so this plugin is not currently needed and causes error
+					     complaining about duplicated classes. -->
+					<!--plugin>
 						<groupId>org.xolstice.maven.plugins</groupId>
 						<artifactId>protobuf-maven-plugin</artifactId>
-					</plugin>
-					<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-assembly-plugin</artifactId> 
-						</plugin> -->
+					</plugin-->
 				</plugins>
 			</build>
 			<dependencies>
@@ -2520,15 +2585,23 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>com.google.api.grpc</groupId>
 					<artifactId>proto-google-common-protos</artifactId>
 				</dependency>
-				<dependency>
-					<groupId>io.grpc</groupId>
-					<artifactId>grpc-protobuf</artifactId>
-				</dependency>
 
 				<!-- GRPC -->
 				<dependency>
 					<groupId>io.grpc</groupId>
+					<artifactId>grpc-code</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>io.grpc</groupId>
+					<artifactId>grpc-protobuf</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>io.grpc</groupId>
 					<artifactId>grpc-stub</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>io.grpc</groupId>
+					<artifactId>grpc-protobuf</artifactId>
 				</dependency>
 				<dependency>
 					<groupId>io.grpc</groupId>
@@ -2567,8 +2640,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<artifactId>common-grpc</artifactId>
 				</dependency>
 				<dependency>
-					<groupId>${project.parent.groupId}</groupId>
-					<artifactId>${mavenbuild.service-name}-grpc-spec</artifactId>
+					<groupId>${project.parent.groupId}.grpc</groupId>
+					<artifactId>${mavenbuild.service-name}-grpc</artifactId>
 					<version>${project.parent.version}</version>
 				</dependency>
 
@@ -2576,10 +2649,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<dependency>
 					<groupId>net.devh</groupId>
 					<artifactId>grpc-server-spring-boot-starter</artifactId>
-					<type>pom</type>
 				</dependency>
-				<!-- <dependency> <groupId>org.lognet</groupId> <artifactId>grpc-spring-boot-starter</artifactId> 
-					</dependency> -->
 
 				<!-- GRPC -->
 				<!-- <dependency> <groupId>io.grpc</groupId> <artifactId>grpc-stub</artifactId> 
@@ -2624,8 +2694,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<artifactId>common-grpc</artifactId>
 				</dependency>
 				<dependency>
-					<groupId>${project.parent.groupId}</groupId>
-					<artifactId>${mavenbuild.service-name}-grpc-spec</artifactId>
+					<groupId>${project.parent.groupId}.grpc</groupId>
+					<artifactId>${mavenbuild.service-name}-grpc</artifactId>
 					<version>${project.parent.version}</version>
 				</dependency>
 
@@ -2633,7 +2703,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<dependency>
 					<groupId>net.devh</groupId>
 					<artifactId>grpc-client-spring-boot-starter</artifactId>
-					<type>pom</type>
 				</dependency>
 
 				<!-- TODO: Are the following client, server, or transitive dependencies?? -->
@@ -2763,10 +2832,6 @@ Establishes common dependency versions, plugin configurations, and modular profi
 						<groupId>org.springframework.boot</groupId>
 						<artifactId>spring-boot-maven-plugin</artifactId>
 					</plugin>
-					<!--plugin>
-						<groupId>com.spotify</groupId>
-						<artifactId>dockerfile-maven-plugin</artifactId>
-					</plugin-->
 				</plugins>
 			</build>
 			<dependencies>
@@ -3390,6 +3455,26 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				</dependency>
 			</dependencies>
 		</profile>
+		<profile>
+			<id>macos</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+			</activation>
+			<properties>
+				<!-- THE FOLLOWING LINE MUST NOT BE BROKEN BY AUTOFORMATTING -->
+				<platformSystemProperties>-XstartOnFirstThread</platformSystemProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>jdk9-or-newer</id>
+			<activation>
+				<jdk>[9,)</jdk>
+			</activation>
+			<properties>
+				<moduleProperties>--add-modules=ALL-SYSTEM</moduleProperties>
+			</properties>
+		</profile>
 	</profiles>
-	<name>starter-parent</name>
 </project>
