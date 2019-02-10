@@ -9,8 +9,19 @@
 		<fileSet encoding="UTF-8">
 			<directory></directory>
 			<includes>
-				<include>.gitignore</include>
 				<include>pom.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>/</directory>
+			<includes>
+				<include>.gitignore</include>
+			</includes>
+		</fileSet>
+		<fileSet encoding="UTF-8">
+			<directory>.mavenbuild-grpc</directory>
+			<includes>
+				<include>spec</include>
 			</includes>
 		</fileSet>
 		<fileSet encoding="UTF-8">

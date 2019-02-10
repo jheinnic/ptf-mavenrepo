@@ -3,59 +3,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>name.jchein.portfolio.maven</groupId>
-		<artifactId>starter-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>${groupId}</groupId>
+		<artifactId>${artifactId}-parent</artifactId>
+		<version>${version}</version>
 	</parent>
 
-	<groupId>${groupId}</groupId>
+	<groupId>${groupId}.grpc</groupId>
 	<artifactId>${artifactId}-grpc</artifactId>
-	<version>${version}</version>
 
-	<name>{$artifactId} Parent POM</name>
-	<description>Parent POM for ${artifactId} microservice modules</description>
+	<name>${artifactId} Java gRPC Protobuf Stubs</name>
+	<description>Java implementation of gRPC Protobuf stubs for ${artifactId} mioservice</description>
  	<packaging>jar</packaging>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.google.api.grpc</groupId>
-			<artifactId>proto-google-common-protos</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.google.api.grpc</groupId>
-			<artifactId>grpc-google-common-protos</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-stub</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-protobuf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-auth</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-netty-shaded</artifactId>
-		</dependency>
-
-
-		<!-- Protobuf Java Library -->
-		<dependency>
-			<groupId>com.google.protobuf</groupId>
-			<artifactId>protobuf-java</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.google.protobuf</groupId>
-			<artifactId>protobuf-java-util</artifactId>
-		</dependency>
-	</dependencies>
 </project>
