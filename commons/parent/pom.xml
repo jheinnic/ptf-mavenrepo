@@ -15,6 +15,7 @@
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
 
+	<name>commons-parent</name>
 	<description>Mavenbuild Commons Projects Parent POM</description>
 
 	<dependencyManagement>
@@ -26,5 +27,4 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<name>commons-parent</name>
 </project>
