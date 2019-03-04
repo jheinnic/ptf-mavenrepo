@@ -59,7 +59,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<maven-surefire.plugin-version>2.20.1</maven-surefire.plugin-version>
 		<protobuf-maven.plugin-version>0.5.1</protobuf-maven.plugin-version>
 		<properties.plugin-version>1.0.0</properties.plugin-version>
-		<!--sql.plugin-version>3.0.0-SNAPSHOT</sql.plugin-version-->
+		<!--sql.plugin-version>3.0.0-SNAPSHOT</sql.plugin-version -->
 		<sql.plugin-version>1.5</sql.plugin-version>
 		<swagger-codegen.plugin-version>2.2.3</swagger-codegen.plugin-version>
 		<viatra.plugin-version>1.6.2</viatra.plugin-version>
@@ -74,6 +74,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 
 		<apache-commons-io.version>2.5</apache-commons-io.version>
 		<apache-commons-lang.version>2.6</apache-commons-lang.version>
+		<apache-commons-math.version>3.6.1</apache-commons-math.version>
 		<apache-httpclient.version>4.5.3</apache-httpclient.version>
 		<apache-sis.version>0.8</apache-sis.version>
 		<asm.version>(5.0.1,6.0]</asm.version>
@@ -82,26 +83,27 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<!--atl.version>3.8.0-20170518.201452-22</atl.version -->
 		<atl.version>3.8.0-SNAPSHOT</atl.version>
 		<eventuate-client.version>0.20.1.RELEASE</eventuate-client.version>
-		<eventuate-local.version>0.30.0.M8</eventuate-local.version>
+		<eventuate-local.version>0.30.0.M13</eventuate-local.version>
 		<gauge.version>0.6.4</gauge.version>
 		<gdal.version>2.2.0</gdal.version>
-		<geojson-jackson.version>1.8</geojson-jackson.version>
+		<geojson-jackson.version>1.8.1</geojson-jackson.version>
 		<google-grpc-common.version>1.12.0</google-grpc-common.version>
-		<!--grpc-spring-boot.version>1.4.0</grpc-spring-boot.version-->
-		<!--gson.version>2.8.1</gson.version-->
+		<!--grpc-spring-boot.version>1.4.0</grpc-spring-boot.version -->
+		<!--gson.version>2.8.1</gson.version -->
 		<guava.version>18.0</guava.version>
 		<hamcrest.version>1.3</hamcrest.version>
 		<hashids.version>1.0.3</hashids.version>
 		<hazelcast.version>3.11.1</hazelcast.version>
-		<!--hibernate-validator.version>6.0.10.Final</hibernate-validator.version-->
+		<!--hibernate-validator.version>6.0.10.Final</hibernate-validator.version -->
 		<io-grpc.version>1.18.0</io-grpc.version>
-		<!--jackson.version>2.9.8</jackson.version-->
-		<!--javax-cdi.version>1.2</javax-cdi.version-->
-		<!--javax-el.version>2.2.5</javax-el.version--> 
-		<!--javax-servlet.version>3.1.0</javax-servlet.version-->
-		<!--javax-validation.version>1.1.0.Final</javax-validation.version-->
+		<!--jackson.version>2.9.8</jackson.version -->
+		<!--javax-cdi.version>1.2</javax-cdi.version -->
+		<!--javax-el.version>2.2.5</javax-el.version -->
+		<!--javax-servlet.version>3.1.0</javax-servlet.version -->
+		<!--javax-validation.version>1.1.0.Final</javax-validation.version -->
 		<javax-measure.version>1.0</javax-measure.version>
 		<javax-ws-rs.version>2.0.1</javax-ws-rs.version>
+		<jctools.version>2.1.</jctools.version>
 		<jgrapht.version>1.3.0</jgrapht.version>
 		<jsr363-core.version>1.0.9</jsr363-core.version>
 		<jsr363-ri.version>1.0.3</jsr363-ri.version>
@@ -111,12 +113,13 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<jwt.version>0.8.0-SNAPSHOT</jwt.version>
 		<keycloak.version>4.8.3.Final</keycloak.version>
 		<lombok.version>1.18.4</lombok.version>
-		<!--jersey-client.version>2.25.1</jersey-client.version-->
-		<!--joda-time.version>2.9.9</joda-time.version-->
-		<!--logback.version>1.2.3</logback.version-->
+		<!--jersey-client.version>2.25.1</jersey-client.version -->
+		<!--joda-time.version>2.9.9</joda-time.version -->
+		<!--logback.version>1.2.3</logback.version -->
 		<migbase64.version>2.2</migbase64.version>
 		<minio-client.version>3.0.6</minio-client.version>
 		<mit-openid-client.version>1.3.1</mit-openid-client.version>
+		<neoemf.version>1.0.2</neoemf.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<openroutes-api.version>4.4.0</openroutes-api.version>
 		<optaplanner.version>7.7.0.Final</optaplanner.version>
@@ -127,27 +130,23 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<rxjava.version>1.3.5</rxjava.version>
 		<jenetics.version>4.3.0</jenetics.version>
 		<scala-lib.version>2.12.2</scala-lib.version>
-		<!--slf4j.version>1.7.25</slf4j.version-->
+		<!--slf4j.version>1.7.25</slf4j.version -->
 		<springfox-version>2.4.0</springfox-version>
 		<spring-boot.version>2.1.2.RELEASE</spring-boot.version>
 		<spring-boot-admin.version>2.1.1</spring-boot-admin.version>
 		<spring-boot-grpc.version>2.2.0.RELEASE</spring-boot-grpc.version>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<spring-statemachine.version>2.0.1.RELEASE</spring-statemachine.version>
-		<!--
-		<spring.version>5.1.4.RELEASE</spring.version>
-		<spring-cloud-aws.version>1.2.4.RELEASE</spring-cloud-aws.version>
-		<spring-cloud-consul.version>2.0.1.RELEASE</spring-cloud-consul.version>
-		<spring-cloud-zookeeper.version>1.1.2.RELEASE</spring-cloud-zookeeper.version>
-		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
-		<spring-integration.version>5.1.2.RELEASE</spring-integration.version>
-		<spring-security.version>5.1.3.RELEASE</spring-security.version>
-		<spring-oauth2-client.version>2.3.4.RELEASE</spring-oauth2-client.version>
-		-->
+		<!-- <spring.version>5.1.4.RELEASE</spring.version> <spring-cloud-aws.version>1.2.4.RELEASE</spring-cloud-aws.version> 
+			<spring-cloud-consul.version>2.0.1.RELEASE</spring-cloud-consul.version> 
+			<spring-cloud-zookeeper.version>1.1.2.RELEASE</spring-cloud-zookeeper.version> 
+			<spring-cloud.version>Greenwich.SR2</spring-cloud.version> <spring-integration.version>5.1.2.RELEASE</spring-integration.version> 
+			<spring-security.version>5.1.3.RELEASE</spring-security.version> <spring-oauth2-client.version>2.3.4.RELEASE</spring-oauth2-client.version> -->
 		<statefulj.version>3.0</statefulj.version>
+		<stanford-nlp.version>3.6.0</stanford-nlp.version>
 		<systems-uom.version>0.7.2</systems-uom.version>
 		<swagger.version>1.5.15</swagger.version>
-		<!--tomcat-embedded.version>8.5.16</tomcat-embedded.version-->
+		<!--tomcat-embedded.version>8.5.16</tomcat-embedded.version -->
 		<uuid-generator.version>3.1.4</uuid-generator.version>
 		<viatra.version>1.6.2</viatra.version>
 		<xtend-contrib.version>1.1.0</xtend-contrib.version>
@@ -199,30 +198,15 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>${maven-dependency.plugin-version}</version>
-					<!--executions>
-						<execution>
-							<id>unpack-api-spec</id>
-							<phase>initialize</phase>
-							<goals>
-								<goal>unpack-dependencies</goal>
-							</goals>
-							<configuration>
-								<outputDirectory>${project.build.directory}/proto-sources</outputDirectory>
-								<stripVersion>true</stripVersion>
-								<includeArtifactIds>${mavenbuild.service-name}-api-spec</includeArtifactIds>
-								<includeGroupIds>${project.groupId}</includeGroupIds>
-								<excludeTransitive>true</excludeTransitive>
-								<excludeTypes>pom</excludeTypes>
-								<includes>*.proto</includes>
-								<classifier>api-spec</classifier>
-								<type>zip</type>
-								--><!--scope>test</scope> <artifactItems> <artifactItem> <groupId>${project.parent.groupId}</groupId> 
-									<artifactId>${mavenbuild.service-name}-api-spec</artifactId> <version>${project.parent.version}</version> 
-									<type>pom</type> <classifier>api-spec</classifier> <overWrite>true</overWrite> 
-									</artifactItem> </artifactItems--><!--
-							</configuration>
-						</execution>
-					</executions-->
+					<!--executions> <execution> <id>unpack-api-spec</id> <phase>initialize</phase> 
+						<goals> <goal>unpack-dependencies</goal> </goals> <configuration> <outputDirectory>${project.build.directory}/proto-sources</outputDirectory> 
+						<stripVersion>true</stripVersion> <includeArtifactIds>${mavenbuild.service-name}-api-spec</includeArtifactIds> 
+						<includeGroupIds>${project.groupId}</includeGroupIds> <excludeTransitive>true</excludeTransitive> 
+						<excludeTypes>pom</excludeTypes> <includes>*.proto</includes> <classifier>api-spec</classifier> 
+						<type>zip</type> --><!--scope>test</scope> <artifactItems> <artifactItem> <groupId>${project.parent.groupId}</groupId> 
+						<artifactId>${mavenbuild.service-name}-api-spec</artifactId> <version>${project.parent.version}</version> 
+						<type>pom</type> <classifier>api-spec</classifier> <overWrite>true</overWrite> 
+						</artifactItem> </artifactItems --><!-- </configuration> </execution> </executions -->
 				</plugin>
 
 				<plugin>
@@ -470,7 +454,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<version>${dockerfile.plugin-version}</version>
 					<executions>
 						<execution>
-						<id>default</id>
+							<id>default</id>
 							<goals>
 								<goal>build</goal>
 								<goal>push</goal>
@@ -507,7 +491,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 									<pluginExecutionFilter>
 										<groupId>org.codehaus.mojo</groupId>
 										<artifactId>sql-maven-plugin</artifactId>
-										<!--versionRange>[3.0.0-SNAPSHOT,)</versionRange-->
+										<!--versionRange>[3.0.0-SNAPSHOT,)</versionRange -->
 										<versionRange>[1.5,3.0.0-SNAPSHOT]</versionRange>
 										<goals>
 											<goal>execute</goal>
@@ -543,25 +527,22 @@ Establishes common dependency versions, plugin configurations, and modular profi
 										<ignore />
 									</action>
 								</pluginExecution>
-								<!--
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>org.xolstice.maven.plugins</groupId>
 										<artifactId>protobuf-maven-plugin</artifactId>
 										<versionRange>[0.5.1,)</versionRange>
-										<extensions>true</extensions>
 										<goals>
 											<goal>compile</goal>
-											<goal>custom-compile</goal>
+											<goal>compile-custom</goal>
 											<goal>test-compile</goal>
-											<goal>test-custom-compile</goal>
+											<goal>test-compile-custom</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<execute />
+										<ignore />
 									</action>
 								</pluginExecution>
-								-->
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
@@ -662,15 +643,11 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+
 			<!-- Jackson is determined by spring-boot BOM -->
-			<!--dependency>
-				<groupId>com.fasterxml.jackson</groupId>
-				<artifactId>jackson-bom</artifactId>
-				<version>${jackson.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency-->
+			<!--dependency> <groupId>com.fasterxml.jackson</groupId> <artifactId>jackson-bom</artifactId> 
+				<version>${jackson.version}</version> <scope>import</scope> <type>pom</type> 
+				</dependency -->
 
 			<!-- Keycloak -->
 			<dependency>
@@ -683,7 +660,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			<dependency>
 				<groupId>org.keycloak</groupId>
 				<artifactId>keycloak-spring-boot-starter</artifactId>
-				<!--version>${keycloak.version}</version-->
+				<!--version>${keycloak.version}</version -->
 			</dependency>
 
 			<!-- Jackson GIS Extensions -->
@@ -704,7 +681,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>jts-core</artifactId>
 				<version>1.15.0</version>
 			</dependency>
-			
+
 			<!-- Drools -->
 			<dependency>
 				<groupId>org.kie</groupId>
@@ -744,12 +721,12 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</dependency>
 			<dependency>
 				<groupId>io.eventuate.local.java</groupId>
-				<artifactId>eventuate-local-java-embedded-cdc</artifactId>
+				<artifactId>eventuate-local-java-cdc-connector-unified</artifactId>
 				<version>${eventuate-local.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.eventuate.local.java</groupId>
-				<artifactId>eventuate-local-java-embedded-cdc-autoconfigure</artifactId>
+				<artifactId>eventuate-local-java-cdc-autoconfigure</artifactId>
 				<version>${eventuate-local.version}</version>
 			</dependency>
 
@@ -770,113 +747,37 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<version>${tomcat-embedded.version}</version> </dependency> -->
 
 
-			<!--dependency>
-				<groupId>org.springframework.security.oauth</groupId>
-				<artifactId>spring-security-oauth2</artifactId>
-				<version>${spring-oauth2.version}</version>
-			</dependency-->
+			<!--dependency> <groupId>org.springframework.security.oauth</groupId> 
+				<artifactId>spring-security-oauth2</artifactId> <version>${spring-oauth2.version}</version> 
+				</dependency -->
 
-			<!-- Spring Cloud 
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-aws-context</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-bus</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-consul-config</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-consul-discovery</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-vault-config</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-actuator</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-data-neo4j</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-integration</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-validation</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka-streams</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.kafka</groupId>
-				<artifactId>spring-kafka</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream-binder-kafka</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-amqp</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.keycloak</groupId>
-				<artifactId>keycloak-spring-boot-starter</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-security</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-oauth2</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-security</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
-			</dependency>
-	
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-devtools</artifactId>
-				<scope>runtime</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-configuration-processor</artifactId>
-				<optional>true</optional>
-			</dependency>
-			-->
+			<!-- Spring Cloud <dependency> <groupId>org.springframework.cloud</groupId> 
+				<artifactId>spring-cloud-aws-context</artifactId> </dependency> <dependency> 
+				<groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-bus</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-consul-config</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-consul-discovery</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-vault-config</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-actuator</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-neo4j</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-integration</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-validation</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-stream</artifactId> 
+				</dependency> <dependency> <groupId>org.apache.kafka</groupId> <artifactId>kafka-streams</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.kafka</groupId> <artifactId>spring-kafka</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-stream-binder-kafka</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-amqp</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-stream-binder-rabbit</artifactId> 
+				</dependency> <dependency> <groupId>org.keycloak</groupId> <artifactId>keycloak-spring-boot-starter</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-oauth2</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-security</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId> 
+				</dependency> <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-devtools</artifactId> 
+				<scope>runtime</scope> </dependency> <dependency> <groupId>org.springframework.boot</groupId> 
+				<artifactId>spring-boot-configuration-processor</artifactId> <optional>true</optional> 
+				</dependency> -->
 
 			<!-- Spring GRPC -->
 			<dependency>
@@ -912,11 +813,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<!--dependency>
-				<groupId>org.lognet</groupId>
-				<artifactId>grpc-spring-boot-starter</artifactId>
-				<version>${grpc-spring-boot.version}</version>
-			</dependency-->
+			<!--dependency> <groupId>org.lognet</groupId> <artifactId>grpc-spring-boot-starter</artifactId> 
+				<version>${grpc-spring-boot.version}</version> </dependency -->
 
 			<!-- GRPC -->
 			<dependency>
@@ -934,11 +832,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>grpc-protobuf</artifactId>
 				<version>${io-grpc.version}</version>
 			</dependency>
-			<!--dependency>
-				<groupId>io.grpc</groupId>
-				<artifactId>grpc-netty</artifactId>
-				<version>${io-grpc.version}</version>
-			</dependency-->
+			<!--dependency> <groupId>io.grpc</groupId> <artifactId>grpc-netty</artifactId> 
+				<version>${io-grpc.version}</version> </dependency -->
 			<dependency>
 				<groupId>io.grpc</groupId>
 				<artifactId>grpc-netty-shaded</artifactId>
@@ -1053,7 +948,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<artifactId>xtend-contrib</artifactId>
 				<version>${xtend-contrib.version}</version>
 			</dependency>
-			
+
 			<!-- Eclipse XText -->
 			<dependency>
 				<groupId>org.eclipse.xtext</groupId>
@@ -1140,13 +1035,50 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<version>${jgrapht.version}</version>
 			</dependency>
 
+			<!-- Java Combinatorial Optimzation Toolkit -->
+
+			<!-- Java Concurrency Tools -->
+			<dependency>
+				<groupId>org.jctools</groupId>
+				<artifactId>jctools-core</artifactId>
+				<version>${jctools.version}</version>
+			</dependency>
+
+			<!-- Apache Math Commons -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-math3</artifactId>
+				<version>${apache-commons-math.version}</version>
+			</dependency>
+
+			<!-- Stanford Core NLP -->
+			<dependency>
+				<groupId>edu.stanford.nlp</groupId>
+				<artifactId>stanford-corenlp</artifactId>
+				<version>${stanford-nlp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>edu.stanford.nlp</groupId>
+				<artifactId>stanford-corenlp</artifactId>
+				<version>${stanford-nlp.version}</version>
+				<classifier>models</classifier>
+			</dependency>
+
+			<!-- NeoEMF -->
+			<dependency>
+				<groupId>fr.inria.atlanmod.neoemf</groupId>
+				<artifactId>neoemf-core</artifactId>
+				<version>${neoemf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.inria.atlanmod.neoemf</groupId>
+				<artifactId>neoemf-io</artifactId>
+				<version>${neoemf.version}</version>
+			</dependency>
+
 			<!-- Project Lombok -->
-			<!--dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<version>${lombok.version}</version>
-				<scope>provided</scope>
-			</dependency-->
+			<!--dependency> <groupId>org.projectlombok</groupId> <artifactId>lombok</artifactId> 
+				<version>${lombok.version}</version> <scope>provided</scope> </dependency -->
 
 			<!-- Optaplanner -->
 			<dependency>
@@ -1574,8 +1506,8 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<dependency>
 					<groupId>org.projectlombok</groupId>
 					<artifactId>lombok</artifactId>
-					<!--version>${lombok.version}</version-->
-					<!--scope>provided</scope-->
+					<!--version>${lombok.version}</version -->
+					<!--scope>provided</scope -->
 				</dependency>
 			</dependencies>
 		</profile>
@@ -1956,7 +1888,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 								<artifactId>org.eclipse.xtend.core</artifactId>
 								<version>${xtext.version}</version>
 							</dependency>
-						</dependencies>					
+						</dependencies>
 					</plugin>
 				</plugins>
 			</build>
@@ -2231,37 +2163,20 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</dependencies>
 		</profile>
 
-<!--
-		<profile>
-			<id>command-model</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-				<file>
-					<exists>${basedir}/.mavenbuild-command-model</exists>
-				</file>
-			</activation>
-			<dependencies>
-				<dependency>
-					<groupId>name.jchein.portfolio.commons</groupId>
-					<artifactId>common-utils</artifactId>
-				</dependency>
-
-				<dependency>
-					<groupId>io.eventuate.client.java</groupId>
-					<artifactId>eventuate-client-java-spring</artifactId>
-				</dependency>
-			</dependencies>
-		</profile>
-		<profile> <id>domain-model</id> <activation> <activeByDefault>false</activeByDefault> 
+		<!-- <profile> <id>command-model</id> <activation> <activeByDefault>false</activeByDefault> 
+			<file> <exists>${basedir}/.mavenbuild-command-model</exists> </file> </activation> 
+			<dependencies> <dependency> <groupId>name.jchein.portfolio.commons</groupId> 
+			<artifactId>common-utils</artifactId> </dependency> <dependency> <groupId>io.eventuate.client.java</groupId> 
+			<artifactId>eventuate-client-java-spring</artifactId> </dependency> </dependencies> 
+			</profile> <profile> <id>domain-model</id> <activation> <activeByDefault>false</activeByDefault> 
 			<file> <exists>${basedir}/.mavenbuild-domain-model</exists> </file> </activation> 
 			<build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
 			</plugin> </plugins> </build> <dependencies> <dependency> <groupId>name.jchein.portfolio.commons</groupId> 
 			<artifactId>common-utils</artifactId> </dependency> <dependency> <groupId>${project.parent.groupId}</groupId> 
 			<artifactId>${mavenbuild.service-name}-command-model</artifactId> <version>${project.parent.version}</version> 
-			</dependency> <dependency> <groupId>${project.parent.groupId}</groupId> 
-			<artifactId>${mavenbuild.service-name}-event-model</artifactId> <version>${project.parent.version}</version> 
-			</dependency> </dependencies> </profile>
--->
+			</dependency> <dependency> <groupId>${project.parent.groupId}</groupId> <artifactId>${mavenbuild.service-name}-event-model</artifactId> 
+			<version>${project.parent.version}</version> </dependency> </dependencies> 
+			</profile> -->
 
 		<profile>
 			<id>view-model</id>
@@ -2501,7 +2416,11 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				</dependency>
 				<dependency>
 					<groupId>io.eventuate.local.java</groupId>
-					<artifactId>eventuate-local-java-embedded-cdc-autoconfigure</artifactId>
+					<artifactId>eventuate-local-java-cdc-connector-unified</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>io.eventuate.local.java</groupId>
+					<artifactId>eventuate-local-java-cdc-autoconfigure</artifactId>
 				</dependency>
 
 				<!-- Spring -->
@@ -2550,13 +2469,11 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</activation>
 			<build>
 				<plugins>
-					<!-- For now, proto projects get their protobuf definitions transformed to code
-					     outside of Maven, so this plugin is not currently needed and causes error
-					     complaining about duplicated classes. -->
-					<!--plugin>
-						<groupId>org.xolstice.maven.plugins</groupId>
-						<artifactId>protobuf-maven-plugin</artifactId>
-					</plugin-->
+					<!-- For now, proto projects get their protobuf definitions transformed 
+						to code outside of Maven, so this plugin is not currently needed and causes 
+						error complaining about duplicated classes. -->
+					<plugin> <groupId>org.xolstice.maven.plugins</groupId> <artifactId>protobuf-maven-plugin</artifactId> 
+						</plugin>
 				</plugins>
 			</build>
 			<dependencies>
@@ -2589,7 +2506,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<!-- GRPC -->
 				<dependency>
 					<groupId>io.grpc</groupId>
-					<artifactId>grpc-code</artifactId>
+					<artifactId>grpc-core</artifactId>
 				</dependency>
 				<dependency>
 					<groupId>io.grpc</groupId>
@@ -2636,7 +2553,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<artifactId>common-utils</artifactId>
 				</dependency>
 				<dependency>
-					<groupId>name.jchein.portfolio.commons</groupId> 
+					<groupId>name.jchein.portfolio.commons</groupId>
 					<artifactId>common-grpc</artifactId>
 				</dependency>
 				<dependency>
@@ -2738,23 +2655,26 @@ Establishes common dependency versions, plugin configurations, and modular profi
 							<execution>
 								<id>copy</id>
 								<phase>package</phase>
-								<goals><goal>copy</goal></goals>
+								<goals>
+									<goal>copy</goal>
+								</goals>
 								<configuration>
 									<artifactItems>
 										<artifactItem>
-											<groupId>${project.parent.groupId}</groupId> 
+											<groupId>${project.parent.groupId}</groupId>
 											<artifactId>${mavenbuild.service-name}-service</artifactId>
-											<version>${project.parent.version}</version> 
+											<version>${project.parent.version}</version>
 										</artifactItem>
 									</artifactItems>
 								</configuration>
 							</execution>
-						</executions> 
-					<!-- Not copying dependencies into target/lib b/c spring-boot bundles dependencies -->
-					<!-- <execution> <phase>initialize</phase> <goals> <goal>copy-dependencies</goal> 
-						</goals> <configuration> <overWriteReleases>false</overWriteReleases> <includeScope>runtime</includeScope> 
-						<outputDirectory>${project.build.directory}/lib</outputDirectory> </configuration> 
-						</execution> -->
+						</executions>
+						<!-- Not copying dependencies into target/lib b/c spring-boot bundles 
+							dependencies -->
+						<!-- <execution> <phase>initialize</phase> <goals> <goal>copy-dependencies</goal> 
+							</goals> <configuration> <overWriteReleases>false</overWriteReleases> <includeScope>runtime</includeScope> 
+							<outputDirectory>${project.build.directory}/lib</outputDirectory> </configuration> 
+							</execution> -->
 					</plugin>
 
 					<!-- Build Docker image -->
@@ -2841,6 +2761,16 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<artifactId>spring-boot-starter</artifactId>
 				</dependency>
 
+				<!-- Spring Cloud -->
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-bus</artifactId>
+				</dependency>
+
 				<!-- Spring Cloud Consul -->
 				<dependency>
 					<groupId>org.springframework.cloud</groupId>
@@ -2857,14 +2787,15 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<artifactId>spring-cloud-starter-vault-config</artifactId>
 				</dependency>
 
+				<!-- Spring Turbine Circuit Breakers -->
 				<dependency>
 					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-starter-hystrix</artifactId>
+					<artifactId>spring-cloud-starter-netflix-turbine</artifactId>
 				</dependency>
 
 				<dependency>
 					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-netflix-turbine</artifactId>
+					<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -2926,6 +2857,10 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-actuator-autoconfigure</artifactId>
 				</dependency>
+				<dependency>
+					<groupId>de.codecentric</groupId>
+					<artifactId>spring-boot-admin-starter-client</artifactId>
+				</dependency>
 			</dependencies>
 		</profile>
 
@@ -2985,6 +2920,23 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		</profile>
 
 		<profile>
+			<id>spring-integration</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/integration</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-integration</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
 			<id>spring-validation</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
@@ -2997,6 +2949,148 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<dependency>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-validation</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spring-batch</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/batch</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.batch</groupId>
+					<artifactId>spring-batch-test</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-batch</artifactId>
+					<scope>test</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spring-retry</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/retry</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-retry</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spring-task</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/task</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-boot-starter-task</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-quartz</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spring-security</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/security</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-security</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-oauth2</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-starter-security</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>spring-statemachine</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/statemachine</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.statemachine</groupId>
+					<artifactId>spring-statemachine-starter</artifactId>
+				</dependency>
+			</dependencies>
+		</profile>
+
+
+		<profile>
+			<id>spring-kafka</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-use-spring/kafka</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<!-- Spring -->
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-stream-binder-kafka</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-stream-binder-kafka-streams</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.kafka</groupId>
+					<artifactId>spring-kafka</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.kafka</groupId>
+					<artifactId>kafka-streams</artifactId>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.cloud</groupId>
+					<artifactId>spring-cloud-stream-test-support</artifactId>
+					<scope>test</scope>
+				</dependency>
+				<dependency>
+					<groupId>org.springframework.kafka</groupId>
+					<artifactId>spring-kafka-test</artifactId>
+					<scope>test</scope>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -3474,6 +3568,12 @@ Establishes common dependency versions, plugin configurations, and modular profi
 			</activation>
 			<properties>
 				<moduleProperties>--add-modules=ALL-SYSTEM</moduleProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>eclipse-ide-workaround</id>
+			<properties>
+				<os.detected.classifier>osx-x86_64</os.detected.classifier>
 			</properties>
 		</profile>
 	</profiles>
