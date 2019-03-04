@@ -1,7 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId}.backend;
+package ${package}.backend;
+
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
@@ -9,9 +10,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import io.eventuate.sync.AggregateRepository;
-import name.jchein.portfolio.services.${parentArtifactId}.domain.Example;
-import name.jchein.portfolio.services.${parentArtifactId}.domain.ExampleCommand;
+import ${package}.domain.Example;
+import ${package}.domain.ExampleCommand;
 import name.jchein.portfolio.common.es.eventuate.IUUIDExtension;
+
 
 @Configuration
 public class BackendConfiguration

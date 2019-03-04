@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package fixtures;
+package ${package}.fixtures;
 
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Scope;
 import io.grpc.Channel;
 import net.devh.springboot.autoconfigure.grpc.client.GrpcClient;
 
-import name.jchein.portfolio.services.${parentArtifactId}.grpc.proto.ExampleGrpc;
+import ${package}.grpc.proto.ExampleGrpc;
 
 
 @TestConfiguration

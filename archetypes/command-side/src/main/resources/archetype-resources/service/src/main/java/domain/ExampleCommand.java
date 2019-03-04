@@ -1,10 +1,12 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId}.domain;
+package ${package}.domain;
+
 
 import io.eventuate.Command;
 
+
 @SuppressWarnings("all")
-public interface ExampleCommand extends Command {
-}
+public interface ExampleCommand extends Command
+{ }

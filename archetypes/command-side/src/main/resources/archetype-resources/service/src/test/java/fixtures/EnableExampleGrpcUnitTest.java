@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package fixtures;
+package ${package}.fixtures;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -13,10 +13,11 @@ import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 
+
 @ContextConfiguration(classes = {
    ExampleGrpcUnitTestConfiguration.class
 }, loader = SpringBootContextLoader.class)
-@TestPropertySource("classpath:/fixtures/ExampleGrpcUnitTest.properties")
+@TestPropertySource("classpath:/${servicePath}/fixtures/ExampleGrpcUnitTest.properties")
 @EnableAutoConfiguration(exclude= {
 	io.eventuate.local.cdc.debezium.EventTableChangesToAggregateTopicRelayConfiguration.class
 //	io.eventuate.local.java.jdbckafkastore.EventuateLocalConfiguration.class,

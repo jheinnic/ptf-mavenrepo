@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 spring:
   application:
-    name: ${parentArtifactName}
+    name: ${schemaName}
   main:
     web-environment: true
     banner-mode: OFF
@@ -41,6 +41,6 @@ server:
 applications: consulHystrixClient
 turbine:
   aggregator:
-    clusterConfig: ${applications}
-  appConfig: ${applications}
+    clusterConfig: ${symbol_dollar}{applications}
+  appConfig: ${symbol_dollar}{applications}
 

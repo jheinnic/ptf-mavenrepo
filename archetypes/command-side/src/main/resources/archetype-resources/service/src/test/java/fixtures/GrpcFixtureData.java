@@ -1,11 +1,13 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package fixtures;
+package ${package}.fixtures;
+
 
 import java.util.UUID;
 
 import lombok.experimental.UtilityClass;
+
 
 @UtilityClass
 public class GrpcFixtureData

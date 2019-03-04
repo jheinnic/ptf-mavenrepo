@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId}.event;
+package ${package}.event;
 
 
 import java.util.function.Consumer;
@@ -26,30 +26,30 @@ import name.jchein.common.validation.constraints.UUIDString;
 public class ExampleCreated
 implements ExampleEvent
 {
-	@NotNull
-	@UUIDString
-	String pilotUuid;
+   @NotNull
+   @UUIDString
+   String pilotUuid;
 
-	@NotNull
-	@NotBlank
-	String firstName;
+   @NotNull
+   @NotBlank
+   String firstName;
 
-	@NotBlank
-	String middleName;
+   @NotBlank
+   String middleName;
 
-	@NotNull
-	@NotBlank
-	String lastName;
-	
-	public static ExampleCreated build(Consumer<ExampleCreatedBuilder> director) {
-		final ExampleCreatedBuilder builder = ExampleCreated.builder();
-		director.accept(builder);
-		return builder.build();
-	}
-	
-	public ExampleCreated copy(Consumer<ExampleCreatedBuilder> director) {
-		final ExampleCreatedBuilder builder = this.toBuilder();
-		director.accept(builder);
-		return builder.build();
-	}
+   @NotNull
+   @NotBlank
+   String lastName;
+   
+   public static ExampleCreated build(Consumer<ExampleCreatedBuilder> director) {
+      final ExampleCreatedBuilder builder = ExampleCreated.builder();
+      director.accept(builder);
+      return builder.build();
+   }
+   
+   public ExampleCreated copy(Consumer<ExampleCreatedBuilder> director) {
+      final ExampleCreatedBuilder builder = this.toBuilder();
+      director.accept(builder);
+      return builder.build();
+   }
 }

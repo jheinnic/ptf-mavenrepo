@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>${groupId}</groupId>
-		<artifactId>${rootArtifactId}-parent</artifactId>
-		<version>${version}</version>
-		<relativePath>../parent</relativePath>
-	</parent>
+    <parent>
+        <groupId>${groupId}</groupId>
+        <artifactId>${rootArtifactId}-parent</artifactId>
+        <version>${version}</version>
+        <relativePath>../parent</relativePath>
+    </parent>
 
-	<artifactId>${artifactId}</artifactId>
-	<name>${artifactId} microservice application</name>
-	<description>Executable jar artifact that launches an instance of ${artifactId} microservice</description>
-	<packaging>jar</packaging>
+    <artifactId>${artifactId}</artifactId>
+    <name>${serviceName} microservice application</name>
+    <description>Executable jar artifact that launches an instance of ${serviceName} microservice</description>
+    <packaging>jar</packaging>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+    </dependencies>
 </project>

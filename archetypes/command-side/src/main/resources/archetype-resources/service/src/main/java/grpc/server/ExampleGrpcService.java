@@ -1,7 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId}.grpc.server;
+package ${package}.grpc.server;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -12,71 +13,73 @@ import io.grpc.stub.StreamObserver;
 import lombok.extern.slf4j.Slf4j;
 import net.devh.springboot.autoconfigure.grpc.server.GrpcService;
 
-import name.jchein.portfolio.services.${parentArtifactId}.backend.IExampleDomainService;
-import name.jchein.portfolio.services.${parentArtifactId}.domain.Example;
-import name.jchein.portfolio.services.${parentArtifactId}.grpc.proto.CreateExampleRequest;
-import name.jchein.portfolio.services.${parentArtifactId}.grpc.proto.ExampleGrpc;
 import name.jchein.portfolio.common.grpc.action.BasicReply;
 import name.jchein.portfolio.common.grpc.action.StatusCode;
 import name.jchein.portfolio.common.grpc.interceptor.EnrichHeaderServerInterceptor;
 
+import ${package}.backend.IExampleDomainService;
+import ${package}.domain.Example;
+import ${package}.grpc.proto.CreateExampleRequest;
+import ${package}.grpc.proto.ExampleGrpc;
+
+
 @Slf4j
 @GrpcService(value = ExampleGrpc.class, interceptors = {
-	EnrichHeaderServerInterceptor.class
+   EnrichHeaderServerInterceptor.class
 })
 public class ExampleGrpcService
 extends ExampleGrpc.ExampleImplBase
 {
-	private final IExampleDomainService domainService;
+   private final IExampleDomainService domainService;
 
 
-	ExampleGrpcService( @Autowired IExampleDomainService domainService )
-	{
-		this.domainService = domainService;
-	}
+   ExampleGrpcService( @Autowired IExampleDomainService domainService )
+   {
+      this.domainService = domainService;
+   }
 
 
-	/**
-	*/
-	@Override
-	public void createExample(CreateExampleRequest request, StreamObserver<BasicReply> responseObserver)
-	{
-		String uuid = request.getId();
-		Preconditions.checkNotNull(uuid);
-		log.info("Processing call to createExample()");
+   /**
+   */
+   @Override
+   public void createExample(CreateExampleRequest request, StreamObserver<BasicReply> responseObserver)
+   {
+      String uuid = request.getId();
+      Preconditions.checkNotNull(uuid);
+      log.info("Processing call to createExample()");
 
-		try {
-			EntityWithIdAndVersion<Example> idVersion =
-				this.domainService.createExample(
-					request.getId(),
-					request.getPilotId(),
-					request.getFirstName(),
-					request.getMiddleName(),
-					request.getLastName());
-			if ((idVersion == null) || (!uuid.equals(idVersion.getEntityId()))) {
-				log.warn("{} was null or has wrong aggregate ID", idVersion);
-				responseObserver.onNext(
-					BasicReply.newBuilder()
-						.setMessage("OK")
-						.setStatus(StatusCode.INVALID_REQUEST)
-						.build());
-			} else {
-				responseObserver.onNext(
-					BasicReply.newBuilder()
-						.setMessage("OK")
-						.setStatus(StatusCode.OK)
-						.build());
-			}
-			responseObserver.onCompleted();
-		}
-		catch (Throwable err) {
-			log.error("Exception thrown during createExample call: ", err);
-			responseObserver.onNext(
-				BasicReply.newBuilder()
-					.setMessage(err.getMessage())
-					.setStatus(StatusCode.INTERNAL_ERROR)
-					.build());
-			responseObserver.onError(err);
-		}
-	}
+      try {
+         EntityWithIdAndVersion<Example> idVersion =
+            this.domainService.createExample(
+               request.getId(),
+               request.getPilotId(),
+               request.getFirstName(),
+               request.getMiddleName(),
+               request.getLastName());
+         if ((idVersion == null) || (!uuid.equals(idVersion.getEntityId()))) {
+            log.warn("{} was null or has wrong aggregate ID", idVersion);
+            responseObserver.onNext(
+               BasicReply.newBuilder()
+                  .setMessage("OK")
+                  .setStatus(StatusCode.INVALID_REQUEST)
+                  .build());
+         } else {
+            responseObserver.onNext(
+               BasicReply.newBuilder()
+                  .setMessage("OK")
+                  .setStatus(StatusCode.OK)
+                  .build());
+         }
+         responseObserver.onCompleted();
+      }
+      catch (Throwable err) {
+         log.error("Exception thrown during createExample call: ", err);
+         responseObserver.onNext(
+            BasicReply.newBuilder()
+               .setMessage(err.getMessage())
+               .setStatus(StatusCode.INTERNAL_ERROR)
+               .build());
+         responseObserver.onError(err);
+      }
+   }
 }

@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId};
+package ${package};
 
 
 import org.springframework.boot.SpringApplication;
@@ -15,8 +15,8 @@ import name.jchein.portfolio.common.es.eventuate.WriteSideServiceConfiguration;
 @Import(WriteSideServiceConfiguration.class)
 public class LaunchMicroservice
 {
-	public static void main(final String[] args)
-	{
-		SpringApplication.run(LaunchMicroservice.class, args);
-	}
+   public static void main(final String[] args)
+   {
+      SpringApplication.run(LaunchMicroservice.class, args);
+   }
 }

@@ -1,8 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId};
-//package name.jchein.portfolio.micros.resolution.registry;
+package ${package};
+//package ${package};
 //
 //
 //import org.apache.curator.x.discovery.ServiceType;
@@ -17,33 +17,33 @@ package name.jchein.portfolio.services.${parentArtifactId};
 //@EnableDiscoveryClient(autoRegister = true)
 //public class MicroserviceRegistration
 //{
-//	private final ZookeeperServiceRegistry registry;
+//   private final ZookeeperServiceRegistry registry;
 //
 //
-//	public MicroserviceRegistration( ZookeeperServiceRegistry registry )
-//	{
-//		this.registry = registry;
-//	}
+//   public MicroserviceRegistration( ZookeeperServiceRegistry registry )
+//   {
+//      this.registry = registry;
+//   }
 //
 //
-//	// called via some external process, such as an event or a custom actuator endpoint
-//	public void register()
-//	{
-//		ZookeeperRegistration registration = constructRegistration();
-//		this.registry.register(registration);
-//	}
+//   // called via some external process, such as an event or a custom actuator endpoint
+//   public void register()
+//   {
+//      ZookeeperRegistration registration = constructRegistration();
+//      this.registry.register(registration);
+//   }
 //
 //
-//	private ZookeeperRegistration constructRegistration()
-//	{
-//		return ServiceInstanceRegistration.builder()
-//			.defaultUriSpec()
-//			.id("resolution.registry")
-//			.name("Resolution Registry")
-//			.serviceType(ServiceType.DYNAMIC)
-//			.address("127.0.0.1")
-//			.sslPort(6443)
-//			.port(6565)
-//			.build();
-//	}
+//   private ZookeeperRegistration constructRegistration()
+//   {
+//      return ServiceInstanceRegistration.builder()
+//         .defaultUriSpec()
+//         .id("resolution.registry")
+//         .name("Resolution Registry")
+//         .serviceType(ServiceType.DYNAMIC)
+//         .address("127.0.0.1")
+//         .sslPort(6443)
+//         .port(6565)
+//         .build();
+//   }
 //}

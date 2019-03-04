@@ -1,7 +1,8 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package name.jchein.portfolio.services.${parentArtifactId}.domain;
+package ${package}.domain;
+
 
 import java.util.function.Consumer;
 
@@ -14,35 +15,36 @@ import lombok.Builder;
 import lombok.Value;
 import name.jchein.common.validation.constraints.UUIDString;
 
+
 @Value
 @Builder(toBuilder=true)
 @ScriptAssert.List({
 })
 public class CreateExample implements ExampleCommand {
-    @NotNull
-    @UUIDString
-    String pilotUuid;
-    
-    @NotNull
-    @NotBlank
-    String firstName;
-
-    @NotBlank
-    String middleName;
-
-    @NotNull
-    @NotBlank
-    String lastName;
+   @NotNull
+   @UUIDString
+   String pilotUuid;
    
-    public static CreateExample build(Consumer<CreateExampleBuilder> director) {
-        final CreateExampleBuilder bldr = CreateExample.builder();
-        director.accept(bldr);
-        return bldr.build();
-    }
-    
-    public CreateExample copy(Consumer<CreateExampleBuilder> director) {
-        final CreateExampleBuilder bldr = this.toBuilder();
-        director.accept(bldr);
-        return bldr.build();
-    }
+   @NotNull
+   @NotBlank
+   String firstName;
+
+   @NotBlank
+   String middleName;
+
+   @NotNull
+   @NotBlank
+   String lastName;
+   
+   public static CreateExample build(Consumer<CreateExampleBuilder> director) {
+      final CreateExampleBuilder bldr = CreateExample.builder();
+      director.accept(bldr);
+      return bldr.build();
+   }
+   
+   public CreateExample copy(Consumer<CreateExampleBuilder> director) {
+      final CreateExampleBuilder bldr = this.toBuilder();
+      director.accept(bldr);
+      return bldr.build();
+   }
 }
