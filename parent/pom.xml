@@ -82,6 +82,7 @@ Establishes common dependency versions, plugin configurations, and modular profi
 		<assertj-guava.version>3.1.0</assertj-guava.version>
 		<!--atl.version>3.8.0-20170518.201452-22</atl.version -->
 		<atl.version>3.8.0-SNAPSHOT</atl.version>
+		<axon.version>4.0.3</axon.version>
 		<eventuate-client.version>0.20.1.RELEASE</eventuate-client.version>
 		<eventuate-local.version>0.30.0.M13</eventuate-local.version>
 		<gauge.version>0.6.4</gauge.version>
@@ -699,6 +700,13 @@ Establishes common dependency versions, plugin configurations, and modular profi
 				<groupId>org.openroutes</groupId>
 				<artifactId>ors-java-client</artifactId>
 				<version>${openroutes-api.version}</version>
+			</dependency>
+
+			<!-- Axon Framework -->
+			<dependency>
+				<groupId>org.axonframework</groupId>
+				<artifactId>axon-spring-boot-starter</artifactId>
+				<version>${axon-framework.version}</version>
 			</dependency>
 
 			<!-- Eventuate -->
@@ -2455,6 +2463,22 @@ Establishes common dependency versions, plugin configurations, and modular profi
 					<groupId>${project.parent.groupId}</groupId>
 					<artifactId>${mavenbuild.service-name}-view-model</artifactId>
 					<version>${project.parent.version}</version>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>axon-module</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<file>
+					<exists>${basedir}/.mavenbuild-axon</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>org.axonframework</groupId>
+					<artifactId>axon-spring-boot-starter</artifactId>
 				</dependency>
 			</dependencies>
 		</profile>
