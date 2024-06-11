@@ -8,7 +8,7 @@
 		<groupId>name.jchein.portfolio.commons</groupId>
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>..</relativePath>
+		<relativePath>../parent</relativePath>
 	</parent>
 
 	<!--groupId>org.openroutes</groupId-->
@@ -198,6 +198,11 @@
 			<artifactId>threetenbp</artifactId>
 			<version>${threetenbp-version}</version>
 		</dependency>
+                <dependency>
+                        <groupId>javax.annotation</groupId>
+                        <artifactId>javax.annotation-api</artifactId>
+                        <version>1.2</version>
+                </dependency>
 		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
